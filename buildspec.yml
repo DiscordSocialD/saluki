@@ -11,9 +11,6 @@ phases:
     # Use go modules rather than GOPATH
     - export GO111MODULE="on"
 
-    # Install golint
-    - go get golang.org/x/lint/golint@v0.0.0-20210508222113-6edffad5e616
-
     # Install Testify to use common assertions and mocks in tests
     - go get -u github.com/stretchr/testify@v1.6.1
 
@@ -22,9 +19,6 @@ phases:
 
     # Fetch all dependencies
     - go get ./...
-
-    # Ensure code passes all lint tests
-    - golint -set_exit_status
 
     # Check for common Go application problems with 'go vet'
     - go vet ./...
