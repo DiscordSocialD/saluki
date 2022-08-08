@@ -27,7 +27,7 @@ phases:
     - golint -set_exit_status
 
     # Check for common Go application problems with 'go vet'
-    - go vet .
+    - go vet ./...
 
     # Run all tests included with our application
     - go test ./...
