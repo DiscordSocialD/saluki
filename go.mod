@@ -1,4 +1,4 @@
-module aws/codestar/projecttemplates/main
+module saluki
 
 go 1.12
 

@@ -1,0 +1,1 @@
+training_gym is an integration test tool to mock real usage in discord
