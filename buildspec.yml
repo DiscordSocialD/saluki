@@ -12,7 +12,7 @@ phases:
     - export GO111MODULE="on"
 
     # Install Testify to use common assertions and mocks in tests
-    - go get -u github.com/stretchr/testify@v1.6.1
+    - go get -u github.com/stretchr/testify
 
   build:
     commands:
@@ -25,6 +25,9 @@ phases:
 
     # Run all tests included with our application
     - go test ./...
+
+    # Create executable for lambda
+    - go build -o ./interacter/handler ./interacter/handler.go
 
 artifacts:
   files:
