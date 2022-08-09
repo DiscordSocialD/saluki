@@ -1,6 +1,6 @@
 module saluki
 
-go 1.12
+go 1.16
 
 require (
 	github.com/aws/aws-lambda-go v1.17.0

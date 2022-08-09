@@ -1,4 +1,4 @@
-package interacter
+package main
 
 import (
 	"testing"
