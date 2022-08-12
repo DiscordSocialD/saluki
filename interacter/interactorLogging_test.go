@@ -9,10 +9,10 @@ func TestFormat(t *testing.T) {
 
 	t.Log("Testing logs for level prefix")
 	formatter := interacterLogFormatter{}
-	debugLogLine := "[DEBUG]\tThis is a debug message!"
-	infoLogLine := "[INFO]\tThis is an info message!"
-	warningLogLine := "[WARNING]\tThis is a warning message!"
-	errorLogLine := "[ERROR]\tThis is an error message!"
+	debugLogLine := "[DEBUG]\tThis is a debug message!\n"
+	infoLogLine := "[INFO]\tThis is an info message!\n"
+	warningLogLine := "[WARNING]\tThis is a warning message!\n"
+	errorLogLine := "[ERROR]\tThis is an error message!\n"
 
 	testEntry := logrus.Entry{
 		Level:   logrus.DebugLevel,
