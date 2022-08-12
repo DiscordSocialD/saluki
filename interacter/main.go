@@ -29,10 +29,15 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	accessor := core.RequestAccessor{}
 	httpRequest, err := accessor.ProxyEventToHTTPRequest(request)
 
-	if err == nil || !IsValidRequest(httpRequest) {
+	if err != nil || !IsValidRequest(httpRequest) {
 
 		// Invalid request, reject
-		logrus.Warn("HTTP request was invalid: " + err.Error())
+		if err != nil {
+			logrus.Error("HTTP request was invalid: " + err.Error())
+		} else {
+			logrus.Warn("HTTP request was invalid")
+		}
+
 		return events.APIGatewayProxyResponse{
 			StatusCode: 401,
 			Body:       "\"Invalid request.\"",
@@ -85,7 +90,7 @@ func GetDiscordPublicKey() (ed25519.PublicKey, error) {
 	}
 	svOut, err := client.GetSecretValue(context.Background(), &svIn)
 
-	if err == nil {
+	if err != nil {
 		logrus.Error("Failed to retrieve Discord Public Key from SecretsManager: " + err.Error())
 		return nil, err
 	}
