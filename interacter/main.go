@@ -83,7 +83,9 @@ func GetDiscordPublicKey() (ed25519.PublicKey, error) {
 	logrus.Debug("Attempting to retrieve Discord Public Key from SecretsManager")
 
 	secretName := os.Getenv("DISCORD_PUBLIC_KEY_SECRET_NAME")
-	client := secretsmanager.New(secretsmanager.Options{})
+	client := secretsmanager.New(secretsmanager.Options{
+		Region: os.Getenv("SECRET_REGION"),
+	})
 
 	svIn := secretsmanager.GetSecretValueInput{
 		SecretId: &secretName,
