@@ -25,14 +25,14 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	logrus.SetFormatter(&logrus.TextFormatter{
 		DisableTimestamp: true,
 	})
-	logrus.Debug("Request body: " + request.Body)
+	logrus.Debugln("Request body: " + request.Body)
 	accessor := core.RequestAccessor{}
 	httpRequest, err := accessor.ProxyEventToHTTPRequest(request)
 
 	if err == nil || !IsValidRequest(httpRequest) {
 
 		// Invalid request, reject
-		logrus.Warn("HTTP request was invalid")
+		logrus.Warn("HTTP request was invalid: " + err.Error())
 		return events.APIGatewayProxyResponse{
 			StatusCode: 401,
 			Body:       "\"Invalid request.\"",
