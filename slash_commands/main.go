@@ -1,9 +1,10 @@
 package main
 
-//
-//// Handler is executed by AWS Lambda in the main function. Once the request
-//// is processed, it returns an Amazon API Gateway response object to AWS Lambda
-//func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+import "fmt"
+
+// // Handler is executed by AWS Lambda in the main function. Once the request
+// // is processed, it returns an Amazon API Gateway response object to AWS Lambda
+// func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 //
 //	if IsValidRequest(request) {
 //		intactn := interaction.Interaction{
@@ -21,13 +22,16 @@ package main
 //		},
 //	}, nil
 //
-//}
+// }
 //
-//func IsValidRequest(request events.APIGatewayProxyRequest) bool {
-//	pubkey, err := GetDiscordPublicKey()
-//	return err == nil && interactions.Verify(request, pubkey)
-//}
+//	func IsValidRequest(request events.APIGatewayProxyRequest) bool {
+//		pubkey, err := GetDiscordPublicKey()
+//		return err == nil && interactions.Verify(request, pubkey)
+//	}
 //
-//func main() {
-//	lambda.Start(Handler)
-//}
+//	func main() {
+//		lambda.Start(Handler)
+//	}
+func main() {
+	fmt.Println("TODO")
+}
