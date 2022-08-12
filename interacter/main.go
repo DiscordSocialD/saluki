@@ -21,6 +21,10 @@ import (
 func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 
 	// Transform into HTTP request
+	logrus.SetLevel(logrus.DebugLevel)
+	logrus.SetFormatter(&logrus.TextFormatter{
+		DisableTimestamp: true,
+	})
 	logrus.Debug("Request body: " + request.Body)
 	accessor := core.RequestAccessor{}
 	httpRequest, err := accessor.ProxyEventToHTTPRequest(request)
@@ -73,14 +77,13 @@ func GetDiscordPublicKey() (ed25519.PublicKey, error) {
 
 	logrus.Debug("Attempting to retrieve Discord Public Key from SecretsManager")
 
-	opts := secretsmanager.Options{}
 	secretName := os.Getenv("DISCORD_PUBLIC_KEY_SECRET_NAME")
-	client := secretsmanager.New(opts)
+	client := secretsmanager.New(secretsmanager.Options{})
 
 	svIn := secretsmanager.GetSecretValueInput{
 		SecretId: &secretName,
 	}
-	svOut, err := client.GetSecretValue(context.TODO(), &svIn)
+	svOut, err := client.GetSecretValue(context.Background(), &svIn)
 
 	if err == nil {
 		logrus.Error("Failed to retrieve Discord Public Key from SecretsManager: " + err.Error())
