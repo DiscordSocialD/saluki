@@ -1,6 +1,5 @@
 package main
 
-// TODO
 //func TestHandler(t *testing.T) {
 //
 //	request := events.APIGatewayProxyRequest{}
