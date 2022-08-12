@@ -8,6 +8,7 @@ import (
 	"errors"
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/secretsmanager"
 	"github.com/awslabs/aws-lambda-go-api-proxy/core"
 	"github.com/bwmarrin/discordgo"
@@ -82,10 +83,10 @@ func GetDiscordPublicKey() (ed25519.PublicKey, error) {
 
 	logrus.Debug("Attempting to retrieve Discord Public Key from SecretsManager")
 
+	cfg, err := config.LoadDefaultConfig(context.Background())
+	cfg.Region = os.Getenv("SECRET_REGION")
 	secretName := os.Getenv("DISCORD_PUBLIC_KEY_SECRET_NAME")
-	client := secretsmanager.New(secretsmanager.Options{
-		Region: os.Getenv("SECRET_REGION"),
-	})
+	client := secretsmanager.NewFromConfig(cfg)
 
 	svIn := secretsmanager.GetSecretValueInput{
 		SecretId: &secretName,
