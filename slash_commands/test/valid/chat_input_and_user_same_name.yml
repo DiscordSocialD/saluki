@@ -1,0 +1,6 @@
+Commands:
+  - name: "helloworld"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld"
+    type: 2

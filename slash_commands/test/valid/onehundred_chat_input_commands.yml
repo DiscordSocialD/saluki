@@ -1,0 +1,301 @@
+Commands:
+  - name: "helloworld0"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld1"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld2"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld3"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld4"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld5"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld6"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld7"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld8"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld9"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld10"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld11"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld12"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld13"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld14"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld15"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld16"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld17"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld18"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld19"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld20"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld21"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld22"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld23"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld24"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld25"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld26"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld27"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld28"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld29"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld30"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld31"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld32"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld33"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld34"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld35"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld36"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld37"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld38"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld39"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld40"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld41"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld42"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld43"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld44"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld45"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld46"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld47"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld48"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld49"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld50"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld51"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld52"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld53"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld54"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld55"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld56"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld57"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld58"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld59"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld60"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld61"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld62"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld63"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld64"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld65"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld66"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld67"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld68"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld69"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld70"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld71"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld72"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld73"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld74"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld75"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld76"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld77"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld78"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld79"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld80"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld81"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld82"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld83"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld84"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld85"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld86"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld87"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld88"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld89"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld90"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld91"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld92"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld93"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld94"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld95"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld96"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld97"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld98"
+    type: 1
+    description: "Tests our command architecture"
+  - name: "helloworld99"
+    type: 1
+    description: "Tests our command architecture"

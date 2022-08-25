@@ -29,6 +29,9 @@ phases:
     # Create executable for lambda
     - go build -o ./interacter/main ./interacter/...
 
+    # Build and run slash commands update
+    - go run ./slash_commands/main.go
+
 artifacts:
   files:
   - interacter/*

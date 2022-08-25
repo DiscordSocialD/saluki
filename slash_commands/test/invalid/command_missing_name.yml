@@ -1,0 +1,3 @@
+Commands:
+  - type: 1
+    description: "Tests our command architecture"

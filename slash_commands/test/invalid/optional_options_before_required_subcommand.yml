@@ -1,0 +1,37 @@
+Commands:
+  - name: "permissions"
+    type: 1
+    description: "Get or edit permissions for a user or a role"
+    options:
+      - name: "set"
+        description: "Set permissions"
+        type: 1
+        required: true
+        options:
+          - name: "user"
+            description: "The user to set permissions for"
+            type: 6
+            required: true
+          - name: "channel"
+            description: "The channel permissions to set. If omitted, the guild permissions will be set"
+            type: 7
+            required: false
+      - name: "blep"
+        type: 1
+        description: "Send a random adorable animal photo"
+        options:
+          - name: "only_smol"
+            description: "Whether to show only baby animals"
+            type: 5
+            required: false
+          - name: "animal"
+            description: "The type of animal"
+            type: 3
+            required: true
+            choices:
+              - name: "Dog"
+                value: "animal_dog"
+              - name: "Cat"
+                value: "animal_cat"
+              - name: "Pengiun"
+                value: "animal_penguin"

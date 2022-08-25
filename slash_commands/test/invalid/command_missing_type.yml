@@ -1,0 +1,3 @@
+Commands:
+  - name: "helloworld"
+    description: "Tests our command architecture"
