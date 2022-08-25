@@ -8,7 +8,7 @@ import (
 func TestFormat(t *testing.T) {
 
 	t.Log("Testing logs for level prefix")
-	formatter := interacterLogFormatter{}
+	formatter := interactorLogFormatter{}
 	debugLogLine := "[DEBUG]\tThis is a debug message!\n"
 	infoLogLine := "[INFO]\tThis is an info message!\n"
 	warningLogLine := "[WARNING]\tThis is a warning message!\n"

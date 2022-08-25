@@ -23,7 +23,7 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 
 	// Transform into HTTP request
 	logrus.SetLevel(logrus.DebugLevel)
-	logrus.SetFormatter(&interacterLogFormatter{logrus.TextFormatter{
+	logrus.SetFormatter(&interactorLogFormatter{logrus.TextFormatter{
 		DisableLevelTruncation: true,
 	}})
 	logrus.Debug("Request body: " + request.Body)
