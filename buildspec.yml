@@ -27,8 +27,8 @@ phases:
     - go test ./...
 
     # Create executable for lambda
-    - go build -o ./interacter/main ./interacter/...
+    - go build -o ./interactor/main ./interactor/...
 
 artifacts:
   files:
-  - interacter/*
+  - interactor/*
